@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    background-color: #fff;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 14px;
+}
+.main-header {
+    border-bottom: 1.5px solid #e5e7eb;
+}
+.certificates-container img {
+    max-height: 40px;
+    object-fit: cover;
+    margin-right: 14px;
+    margin-top: 8px;
+}
+.multiple-images img {
+    max-height: 50px;
+    object-fit: contain;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.description {
+    font-size: 15px;
+}
+.bg-sky-600 {
+    background-color: #356fb7;
+}
+.text-sky-600 {
+    color: #356fb7;
+}
+.divider {
+    width: 90px;
+    margin-top: 14px;
+    position: relative;
+}
+.divider::before {
+    position: absolute;
+    width: 90px;
+    left: 0%;
+    top: 8px;
+    height: 3px;
+    content: "";
+    color: #fff;
+    border-bottom-color: #356fb7;
+    border-bottom-width: 3px;
+}
+.iti {
+    height: 45px;
+    width: 100%;
+}
+.iti__flag-container {
+    height: 45px;
+}
+.iti__tel-input {
+    height: 45px;
+    border-radius: 4px;
+    width: 100%;
+    
+}
+.experts_card .company_logo {
+    max-width: 60%;
+    height: 80px;
+    object-fit: contain;
+}
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style each individual OTP box */
+.otp-container input {
+    margin: 0 5px; /* Adjust margin as needed */
+}
+
+/* Customize the OTP box */
+.otp-container input {
+    width: 40px !important; /* Adjust width to make the boxes bigger */
+    height: 40px; /* Adjust height to make the boxes bigger */
+    border: 2px solid #ccc; /* Add gray borders */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    text-align: center; /* Center text horizontally */
+    font-size: 16px; /* Adjust font size */
+}
+
+.syllabus-container {
+    position: relative;
+    padding-left: 15px;
+}
+.syllabus-container::before {
+    width: 1px;
+    height: calc(100% - 50px);
+    content: "";
+    display: inline-block;
+    background: #d2d6de;
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+.syllabus-container .title::before {
+    width: 10px;
+    height: 10px;
+    background: #d2d6de;
+    padding: 0;
+    border-radius: 50%;
+    left: -4px;
+    position: absolute;
+    margin-top: 22px;
+    content: "";
+    display: inline-block;
+}
